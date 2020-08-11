@@ -1,0 +1,25 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/3/syntax.html
+name: templatejs
+file_extensions:
+  - tmpl
+scope: source.templatejs
+contexts:
+  main:
+    - match: ""
+      push: "Packages/HTML/HTML.sublime-syntax"
+      with_prototype:
+        - match: "(<([%#]))(((\\w+)?(:))?(=))?"
+          captures:
+            1: support.type
+            5: support.function
+            6: keyword.control
+            7: keyword.operator
+          push: template
+
+  template:
+    - match: "[%#]>"
+      captures:
+        0: support.type
+      pop: true

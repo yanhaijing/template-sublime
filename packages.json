@@ -1,0 +1,17 @@
+{
+	"schema_version": "3.0.0",
+	"packages":[
+		{
+			"name": "templatejs",
+			"details": "https://github.com/yanhaijing/template-sublime",
+			"labels": ["template", "template.js", "templatejs", "template_js"],
+			"description": "Syntax highlight for template.js",
+			"releases": [
+				{
+					"sublime_text": ">=3092",
+					"tags": true
+				}
+			]
+		}
+	]
+}
