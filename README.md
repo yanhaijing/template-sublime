@@ -1,6 +1,6 @@
 # [template-sublime](https://github.com/yanhaijing/template-sublime)
 
-[template.js](https://github.com/yanhaijing/template.js)的sublime插件，[点击这里查看](https://marketplace.visualstudio.com/items?itemName=yanhaijing1234.templatejs)
+[template.js](https://github.com/yanhaijing/template.js)的sublime插件，[点击这里查看](https://github.com/yanhaijing/template-sublime)
 
 ## How to install
 
