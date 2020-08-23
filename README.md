@@ -1,28 +1,30 @@
 # [template-sublime](https://github.com/yanhaijing/template-sublime)
 
-[template.js](https://github.com/yanhaijing/template.js)的sublime插件，[点击这里查看](https://github.com/yanhaijing/template-sublime)
+[template.js](https://github.com/yanhaijing/template.js) plugin for sublime, [click here](https://packagecontrol.io/packages/templatejs).
 
 ## How to install
 
-Way 1: with [Package Control](http://wbond.net/sublime_packages/package_control):
+Way 1: with [Package Control](http://wbond.net/sublime_packages/package_control)
+
+1. Run "Package Control: Install Package" command, find and install `templatejs` plugin.
+
+Way 2: with [Package Control](http://wbond.net/sublime_packages/package_control) + Custom Repository:
 
 1. Run "Package Control: Add repository" and add https://github.com/yanhaijing/template-sublime
 2. Run "Package Control: Install Package" command, find and install `templatejs` plugin.
-3. Restart ST2 editor (if required)
 
-Way 2: download and copy
+Way 3: download and copy
 
 1. Clone or [download] git repo into your packages folder (in ST2, find Browse Packages... menu item to open this folder)
-2. Restart ST2 editor (if required)
 
 
 ## Features
 
-- 语法高亮
+- Syntax highlight
 
-支持templatejs的模板语法高亮
+Support syntax highlight for template.js
 
-下面示例如下
+Source code sample
 
 ```
 <h2>我的待办</h2>
@@ -42,7 +44,7 @@ Way 2: download and copy
 <a href="#" class="btn btn-dark add-todo">新增</a>
 ```
 
-高亮后的效果
+Highlighting effect
 
 ![](./img/demo.png)
 
@@ -52,7 +54,7 @@ Way 2: download and copy
 ## TODO
 [TODO.md](https://github.com/yanhaijing/template-sublime/blob/master/TODO.md)
 
-## 参考文档
+## Reference
 
 - [How To Make a Custom Syntax Highlighting for Sublime Text](http://ilkinulas.github.io/programming/2016/02/05/sublime-text-syntax-highlighting.html)
 - [官网API](http://www.sublimetext.com/docs/3/syntax.html)
