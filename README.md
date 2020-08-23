@@ -1,6 +1,6 @@
 # [template-sublime](https://github.com/yanhaijing/template-sublime)
 
-[template.js](https://github.com/yanhaijing/template.js) plugin for sublime, [click here](https://packagecontrol.io/packages/templatejs).
+[template.js](https://github.com/yanhaijing/template.js) plugin for sublime, [click here](https://packagecontrol.io/packages/templatejs) to install.
 
 ## How to install
 
@@ -24,7 +24,7 @@ Way 3: download and copy
 
 Support syntax highlight for template.js
 
-Source code sample
+Source code example
 
 ```
 <h2>我的待办</h2>
@@ -54,8 +54,20 @@ Highlighting effect
 ## TODO
 [TODO.md](https://github.com/yanhaijing/template-sublime/blob/master/TODO.md)
 
-## Reference
+## Contributor guide
+开发时，将当前项目软连接到sublime的插件目录(菜单/Preference/Browse Packages)即可实时预览，可能需要重启
 
+```
+ln -s . xxx/Packages/User
+```
+
+发布时需要打tag，然后push到github即可
+
+```
+git tag x.y.z
+```
+
+## Reference
 - [How To Make a Custom Syntax Highlighting for Sublime Text](http://ilkinulas.github.io/programming/2016/02/05/sublime-text-syntax-highlighting.html)
 - [官网API](http://www.sublimetext.com/docs/3/syntax.html)
 - [如何打包发布](https://packagecontrol.io/docs/submitting_a_package)
