@@ -1,24 +1,29 @@
 %YAML 1.2
 ---
-# See http://www.sublimetext.com/docs/3/syntax.html
+# See http://www.sublimetext.com/docs/syntax.html
+# Needs Sublime Text 4075 or newer (extends, meta_prepend).
 name: templatejs
+version: 2
+extends: Packages/HTML/HTML.sublime-syntax
 file_extensions:
   - tmpl
-scope: source.templatejs
+scope: text.html.templatejs
 contexts:
-  main:
-    - match: ""
-      push: "Packages/HTML/HTML.sublime-syntax"
-      with_prototype:
-        - match: "(<([%#]))(((\\w+)?(:))?(=))?"
-          captures:
-            1: support.type
-            5: support.function
-            6: keyword.control
-            7: keyword.operator
-          push: template
+  prototype:
+    - meta_prepend: true
+    - include: template-tag
+
+  template-tag:
+    - match: "(<([%#]))(((\\w+)?(:))?(=))?"
+      captures:
+        1: support.type
+        5: support.function
+        6: keyword.control
+        7: keyword.operator
+      push: template
 
   template:
+    - meta_include_prototype: false
     - match: "[%#]>"
       captures:
         0: support.type
